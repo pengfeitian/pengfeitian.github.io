@@ -1,0 +1,32 @@
+/* Site-specific tweaks on top of the Beautiful Jekyll theme */
+
+/* Hide the site title in the top-left of the navbar (the name is already under the photo) */
+.navbar-custom .navbar-brand {
+  display: none;
+}
+/* Keep the menu button on the right once the title is gone */
+.navbar-custom .navbar-toggler {
+  margin-left: auto;
+}
+
+/* Smaller name and email under the photo */
+.intro-header .page-heading h1 {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .intro-header .page-heading h1 {
+    font-size: 2.25rem;
+  }
+}
+.intro-header .page-heading .page-subheading {
+  font-size: 1.25rem;
+}
+
+/* Section titles: same font, size and weight as the body text */
+[role="main"] h2 {
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}

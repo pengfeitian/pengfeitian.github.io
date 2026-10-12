@@ -1,0 +1,50 @@
+# Site settings for https://pengfeitian.github.io
+# Theme: Beautiful Jekyll (https://beautifuljekyll.com), loaded remotely.
+# To upgrade the theme, change the version after the "@" below.
+remote_theme: daattali/beautiful-jekyll@6.0.1
+
+title: Pengfei Tian
+author: Pengfei Tian
+url: "https://pengfeitian.github.io"
+
+navbar-links:
+  Full Publications: "https://scholar.google.com/citations?user=p4T8WvYAAAAJ&hl=en"
+
+site-css:
+  - "/assets/css/custom.css"
+
+avatar: "/assets/img/people.jpeg"
+round-avatar: true
+
+social-network-links:
+  email: "pengfeitian@google.com"
+  twitter: pengfei10
+  google-scholar: citations?user=p4T8WvYAAAAJ
+
+# No share buttons on a personal homepage
+share-links-active:
+  twitter: false
+  facebook: false
+  linkedin: false
+  vk: false
+
+timezone: "America/New_York"
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
